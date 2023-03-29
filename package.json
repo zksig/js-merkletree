@@ -34,6 +34,7 @@
   },
   "homepage": "https://github.com/iden3/js-merkletree#readme",
   "scripts": {
+    "prepare": "npm run build",
     "lint": "eslint --fix --ext .js,.ts src/**",
     "clean": "rimraf ./dist",
     "build": "npm run clean && npm run build:esm && npm run build:umd && npm run build:esm:esbuild && npm run build:tsc",
